@@ -1,17 +1,7 @@
 import ItemCard from "../components/ItemCard";
 import MainButton from "../components/MainButton";
-import Footer from "../components/Footer";
 import products from "../data/products";
 import { Link } from "react-router-dom";
-import { Accordion, AccordionSummary, AccordionDetails } from "@mui/material";
-import ExpandMoreIcon from "@mui/icons-material/ExpandMore";
-import {
-  FaFacebookF,
-  FaPinterestP,
-  FaInstagram,
-  FaYoutube,
-  FaTiktok,
-} from "react-icons/fa";
 
 function Home() {
   return (
