@@ -1,0 +1,119 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+
+/*@layer utilities {
+  @variants responsive {
+    /* Hide scrollbar for Chrome, Safari and Opera */
+  /*  .no-scrollbar::-webkit-scrollbar {
+        display: none;
+    }
+
+    /* Hide scrollbar for IE, Edge and Firefox */
+  /*  .no-scrollbar {
+        -ms-overflow-style: none;  /* IE and Edge */
+/*        scrollbar-width: none;  /* Firefox */
+ /*   }
+    
+  }
+}*/
+
+:root {
+  font-family: Inter, system-ui, Avenir, Helvetica, Arial, sans-serif;
+  line-height: 1.5;
+  font-weight: 400;
+
+  color-scheme: light dark;
+  color: black;
+  background-color: white;
+
+  font-synthesis: none;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  -webkit-text-size-adjust: 100%;
+
+  
+}
+
+::-webkit-scrollbar {
+  width: 12px; /* Adjust as needed */
+  height: 8px;
+}
+
+::-webkit-scrollbar-thumb {
+  background-color: rgba(0, 0, 0, 0.3); /* Adjust the color and transparency */
+}
+
+
+::-webkit-scrollbar-track-horizontal {
+  background-color: transparent;
+}
+
+/* Thumb style (the draggable part of the scrollbar) */
+::-webkit-scrollbar-thumb:horizontal {
+  background-color: rgba(0, 0, 0, 0.3); /* Color and transparency of the thumb */
+  border-radius: 5px; /* Rounded shape of the thumb */
+}
+
+/* Optional: Hover and active styles for the thumb */
+::-webkit-scrollbar-thumb:horizontal:hover {
+  background-color: rgba(0, 0, 0, 0.5);
+}
+
+::-webkit-scrollbar-thumb:horizontal:active {
+  background-color: rgba(0, 0, 0, 0.7);
+}
+
+a {
+  font-weight: 500;
+  color: black;
+  text-decoration: inherit;
+}
+
+
+body {
+  margin: 0 auto;
+  padding: 0;
+  box-sizing: border-box;
+  min-width: 320px;
+  
+  /*max-width: 1400px;*/
+}
+
+h1 {
+  font-size: 3.2em;
+  line-height: 1.1;
+}
+
+button {
+  border-radius: 8px;
+  padding: 0.6em 1.2em;
+  font-size: 1em;
+  font-weight: 500;
+  font-family: inherit;
+  background-color: #1a1a1a;
+  cursor: pointer;
+  
+}
+
+h2{
+  text-underline-offset: 8px;
+}
+
+
+
+
+@media (prefers-color-scheme: light) {
+  :root {
+    color: #213547;
+    background-color: #ffffff;
+  }
+  a:hover {
+    color: #747bff;
+  }
+  button {
+    background-color: #f9f9f9;
+  }
+}
