@@ -8,6 +8,7 @@ import {
 } from "react-icons/ai";
 import { FiTrash2 } from "react-icons/fi";
 import products from "../data/products";
+import { motion } from "framer-motion";
 
 function ShoppingCart({ handleCartExit }) {
   console.log("vegeto");
@@ -26,7 +27,13 @@ function ShoppingCart({ handleCartExit }) {
 
   return (
     <div className="">
-      <div className="fixed w-full min-h-screen top-5 bottom-0 overflow-y-scroll bg-white z-[60] rounded-md p-4">
+      <motion.div
+        className="fixed max-w-[768px] w-full min-h-screen top-5 bottom-0 right-0 overflow-y-scroll bg-white z-[60] rounded-md p-4"
+        initial={{ y: "100%" }} // Slide in if displayMenu is true, otherwise slide out
+        animate={{ y: 0 }} // Slide in if displayMenu is true, otherwise slide out
+        transition={{ duration: 0.5 }}
+        exit={{ y: "100%" }}
+      >
         <div className="flex items-center justify-center p-2 mb-4">
           <h3 className="text-sm font-medium">YOUR BAG</h3>
           <AiOutlineClose
@@ -105,9 +112,9 @@ function ShoppingCart({ handleCartExit }) {
             })
           )}
         </div>
-      </div>
+      </motion.div>
 
-      <div className="fixed inset-0 h-screen w-full z-20 bg-black opacity-80"></div>
+      <div className="fixed inset-0 h-screen w-full z-[55] bg-black opacity-70"></div>
     </div>
   );
 }

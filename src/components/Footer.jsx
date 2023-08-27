@@ -24,9 +24,9 @@ function Footer() {
   }, []);
   return (
     <div className="max-w-[1450px] mx-auto px-4">
-      <div className="bg-gray-200 h-[1px] mt-0"></div>
+      <div className="bg-gray-200 h-[1px] mt-0 lg:mb-8 lg:mt-12"></div>
       {windowWidth >= 1000 ? <FooterLgScreen /> : <FooterMobile />}
-      <div className="bg-gray-200 h-[1px] mt-4"></div>
+      <div className="bg-gray-200 h-[1px] mt-0 lg:mt-8"></div>
       <div className="flex justify-center items-center space-x-8 my-8 text-2xl">
         <FaFacebookF className="cursor-pointer hover:mb-0.5 text-blue-500" />
         <FaPinterestP className="cursor-pointer hover:mb-0.5 text-red-700" />

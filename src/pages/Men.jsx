@@ -9,7 +9,7 @@ import Footer from "../components/Footer";
 function Men() {
   const mensProducts = products.filter((product) => product.gender == "Mens");
   return (
-    <div className="max-w-[1450px] mx-auto px-4">
+    <div className="max-w-[1450px] mx-auto min-[1450px]:px-4">
       <div className="relative h-[800px]">
         {/*Hero Section */}
         <img
@@ -35,9 +35,12 @@ function Men() {
         </div>
       </div>
       {/*Clothing Section */}
-      <div className="px-4 pt-8 lg:pt-14 xl:px-0" id="mens-collection">
+      <div
+        className="pt-8 px-4 lg:pt-14 min-[1450px]:px-0"
+        id="mens-collection"
+      >
         <Header text="The Men's Collection" />
-        <div className="flex flex-wrap gap-2 xl:gap-1.5">
+        <div className="flex flex-wrap gap-1.5">
           {mensProducts.map((i) => (
             <ItemCard
               key={i.id}

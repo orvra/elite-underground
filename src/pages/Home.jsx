@@ -2,17 +2,18 @@ import ItemCard from "../components/ItemCard";
 import MainButton from "../components/MainButton";
 import products from "../data/products";
 import { Link } from "react-router-dom";
+import IconAnimation from "../components/IconAnimation";
 
 function Home() {
   return (
     <div className="mb-8">
       {/*HERO TEXT SECTION 1 A*/}
       <div className="flex flex-col px-10 items-center text-center max-w-5xl mx-auto pt-14 pb-7 lg:pt-8 lg:pb-12">
-        <div className="flex items-center space-x-6">
+        <div className="flex items-center space-x-3.5 md:space-x-4 lg:space-x-6">
           <h1 className="text-4xl font-bold tracking-tighter lg:text-[85px] md:text-5xl ">
             WE ARE
           </h1>{" "}
-          <img src="/src/images/eug_v8.png" className="w-48 pt-2.5" />
+          <IconAnimation interval={250} />
         </div>
         <p className="text-sm sm:text-2xl pt-4 text-transparent bg-clip-text bg-gradient-to-r from-slate-500 to-black">
           Unleash the champion within, no matter where you begin. Embrace a
@@ -29,7 +30,7 @@ function Home() {
         />{" "}
         <div className="absolute z-[7] bottom-4 w-full px-5 md:px-0 md:w-1/2 md:bottom-[40%] md:left-[60%] lg:left-[65%] xl:left-[63%] xl:bottom-[35%]">
           <div className="pb-4">
-            <h1 className="text-white font-bold tracking-tighter text-2xl md:text-3xl xl:text-5xl">
+            <h1 className="text-white font-bold tracking-tighter text-2xl md:text-3xl xl:text-4xl">
               ELITE UNDERGROUND
             </h1>
             <h1 className="text-white font-bold tracking-tighter pb-2 md:text-5xl xl:text-7xl">
@@ -47,7 +48,7 @@ function Home() {
 
       {/*MENS COLLECTION */}
 
-      <div className="max-w-[1450px] mx-auto px-4 pt-10 lg:pt-16 ">
+      <div className="max-w-[1450px] mx-auto px-4 pt-10 pb-4 lg:pt-16 ">
         <h2 className="font-medium text-gray-700">MENS</h2>
         <div className="pb-4 justify-between lg:flex">
           <h1 className="font-bold text-3xl">ELITE FITNESS</h1>
@@ -96,30 +97,28 @@ function Home() {
         </div>
       </div>
 
-      {/* HERO PICTURE SECTION 1 */}
-      <div className="mt-48 grid  bg-sky-100  grid-cols-1 gap-0 lg:grid-cols-2">
-        <div className="h-[700px] relative">
-          <img
-            className="h-full object-cover"
-            src="./src/images/athletes/women_staring2.jpg"
-          />{" "}
+      {/* WOMENS HERO SECTION*/}
+      <div className="relative h-[700px] w-full overflow-hidden lg:mt-6">
+        <img
+          className="absolute z-[5] h-full w-full object-cover xl:h-[110%]"
+          src="./src/images/athletes/womens_hero.jpg"
+        />{" "}
+        <div className="absolute z-[7] bottom-4 w-full px-5 md:px-0 md:w-1/2 md:bottom-[40%] md:left-[4%] lg:left-[6%] xl:left-[10%] xl:bottom-[35%]">
+          <div className="pb-4">
+            <h1 className="text-white font-bold tracking-tighter text-xl md:text-3xl xl:text-4xl">
+              WHERE COMFORT MEETS
+            </h1>
+            <h1 className="text-white font-bold tracking-tighter pb-2 text-4xl md:text-5xl xl:text-7xl">
+              PERFORMANCE
+            </h1>
+            <p className="text-white text-md md:text-sm xl:text-lg">
+              Grab your fit and shine bright.
+            </p>
+          </div>
           <Link to="/women">
-            <MainButton
-              position="absolute left-4 bottom-20"
-              text="Shop Womens"
-            />
+            <MainButton position="w-full md:w-52" text="Shop Womens" />
           </Link>
         </div>
-        <div className="h-[700px] relative">
-          <img
-            className="h-full object-cover"
-            src="./src/images/athletes/guy_sitting.jpg"
-          />{" "}
-          <Link to="/men">
-            <MainButton position="absolute left-4 bottom-20" text="Shop Mens" />
-          </Link>
-        </div>
-        {/*<div className='h-[700px] relative'><img className='h-full object-cover' src='./src/images/athletes/kids_fight.jpg'/> <MainButton position='absolute left-0 bottom-0 m-4' text='Shop Kids' /></div>*/}
       </div>
 
       {/*WOMENS COLLECTION */}
@@ -175,20 +174,33 @@ function Home() {
 
       {/*SHOP KIDS HERO SECTION*/}
       <div className="relative w-full h-[700px] lg:mt-6">
+        <div className="absolute z-[6] w-full h-full bg-gradient-to-b from-transparent from-60% to-black opacity-100 lg:from-40%"></div>
         <img
           className="w-full h-full object-cover"
           src="./src/images/athletes/kids_fight3.jpg"
         ></img>
-        <Link to="/kids">
-          <MainButton
-            position="absolute left-1/2 top-1/2 -translate-x-20"
-            text="Shop Kids"
-          />
-        </Link>
+        <div className="absolute z-[7] flex flex-col justify-center bottom-4 w-full px-4 md:bottom-[30%]">
+          <div className="text-center pb-4">
+            <h1 className="text-white font-bold tracking-tighter text-xl md:text-3xl xl:text-4xl">
+              EVERY CHAMPION BEGINS
+            </h1>
+            <h1 className="text-white font-bold tracking-tighter text-4xl pb-2 md:text-5xl xl:text-7xl">
+              IN THE UNDERGROUND
+            </h1>
+            <p className="text-white text-md md:text-sm xl:text-lg">
+              Choose your gear and go.
+            </p>
+          </div>
+          <div className="w-full text-center">
+            <Link to="/kids">
+              <MainButton position="w-full md:w-48 " text="Shop Kids" />
+            </Link>
+          </div>
+        </div>
       </div>
 
       {/* TRI-ATHLETE SECTION */}
-      <div className="max-w-[1450px] mx-auto px-4 pt-4 lg:pt-4">
+      <div className="max-w-[1450px] mx-auto px-4 pt-12 lg:pt-20">
         <h1 className="font-bold text-3xl pb-4">OUR ATHLETES</h1>
         <div className="flex flex-col space-y-4 lg:h-[620px] lg:space-y-0 lg:grid lg:grid-cols-3 lg:gap-2 lg:grid-rows-1">
           <div className="relative group max-w-[500px] h-full overflow-hidden lg:w-full">

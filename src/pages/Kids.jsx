@@ -8,9 +8,9 @@ import { Link } from "react-scroll";
 function Kids() {
   const kidsProducts = products.filter((product) => product.gender == "Kids");
   return (
-    <div className="max-w-[1450px] mx-auto">
+    <div className="max-w-[1450px] mx-auto min-[1450px]:px-4">
       {/*Hero Section */}
-      <div className="relative h-[800px]">
+      <div className="relative h-[800px] w-full">
         <img
           src="./src/images/athletes/kids_soccer2.jpg"
           className="w-full h-full object-cover"
@@ -29,9 +29,12 @@ function Kids() {
       </div>
 
       {/*Clothing Section */}
-      <div className="px-4 pt-8 lg:pt-14 xl:px-0" id="kids-collection">
+      <div
+        className="pt-8 px-4 lg:pt-14 min-[1450px]:px-0"
+        id="kids-collection"
+      >
         <Header text="The Kids Collection" />
-        <div className="flex flex-wrap gap-2 xl:gap-1.5">
+        <div className="flex flex-wrap gap-1.5">
           {kidsProducts.map((i) => (
             <ItemCard
               key={i.id}

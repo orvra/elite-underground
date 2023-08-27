@@ -62,7 +62,10 @@ function App() {
   return (
     <>
       <CartContextProvider>
-        {displayCart && <ShoppingCart handleCartExit={handleCartExit} />}
+        <AnimatePresence>
+          {displayCart && <ShoppingCart handleCartExit={handleCartExit} />}
+        </AnimatePresence>
+
         <AnimatePresence>
           {displayMenu && (
             <MenuOverlay
@@ -74,6 +77,7 @@ function App() {
             />
           )}
         </AnimatePresence>
+
         <Navbar
           handleInputChange={handleInputChange}
           handleSubmit={handleSubmit}

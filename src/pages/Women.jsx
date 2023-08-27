@@ -10,7 +10,7 @@ function Women() {
     (product) => product.gender == "Women"
   );
   return (
-    <div className="max-w-[1450px] mx-auto px-4">
+    <div className="max-w-[1450px] mx-auto min-[1450px]:px-4">
       {/*Hero Section */}
       <div className="relative h-[800px]">
         <img
@@ -33,11 +33,11 @@ function Women() {
         </div>
       </div>
       {/*Clothing Section */}
-      <div className="pt-8 lg:pt-14 xl:px-0">
+      <div className="pt-8 px-4 lg:pt-14 min-[1450px]:px-0">
         <div className="text-start" id="womens-collection">
           <Header text="The Womens Collection" />
         </div>
-        <div className="flex flex-wrap gap-2 xl:gap-1.5">
+        <div className="flex flex-wrap gap-1.5">
           {womensProducts.map((i) => (
             <ItemCard
               key={i.id}
