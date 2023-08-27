@@ -67,7 +67,7 @@ function MenuOverlay({
 
   return (
     <motion.div
-      className="fixed w-full min-h-screen top-0 bottom-0 z-20 bg-white md:overflow-y-scroll lg:hidden"
+      className="fixed w-full min-h-screen top-0 bottom-0 z-[60] bg-white md:overflow-y-scroll lg:hidden"
       initial={{ x: "100%" }} // Slide in if displayMenu is true, otherwise slide out
       animate={{ x: 0 }} // Slide in if displayMenu is true, otherwise slide out
       transition={{ duration: 0.5 }}

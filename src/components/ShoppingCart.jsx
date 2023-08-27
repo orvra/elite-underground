@@ -26,7 +26,7 @@ function ShoppingCart({ handleCartExit }) {
 
   return (
     <div className="">
-      <div className="fixed w-full min-h-screen top-5 bottom-0 overflow-y-scroll bg-white z-30 rounded-md p-4">
+      <div className="fixed w-full min-h-screen top-5 bottom-0 overflow-y-scroll bg-white z-[60] rounded-md p-4">
         <div className="flex items-center justify-center p-2 mb-4">
           <h3 className="text-sm font-medium">YOUR BAG</h3>
           <AiOutlineClose
