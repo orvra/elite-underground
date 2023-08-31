@@ -1,6 +1,5 @@
 import { FaRegHeart } from "react-icons/fa";
 import { BiShoppingBag } from "react-icons/bi";
-import { BiCartAdd } from "react-icons/bi";
 import { useState, useContext } from "react";
 import { Link } from "react-router-dom";
 import { CartContext } from "../context/CartContext";
@@ -16,7 +15,7 @@ function ItemCard({
 }) {
   const [isShown, setIsShown] = useState(false);
 
-  const { addItems } = useContext(CartContext);
+  const { addItems, openWishlistPopup } = useContext(CartContext);
 
   return (
     <div className={`relative h-[${height}px] w-[350px]`}>
@@ -26,7 +25,7 @@ function ItemCard({
         onMouseLeave={() => setIsShown(false)}
       >
         <button className="absolute top-4 right-4 text-lg bg-white p-2 rounded-full">
-          <FaRegHeart className="text-lg" />
+          <FaRegHeart className="text-lg" onClick={() => openWishlistPopup()} />
         </button>
         <Link to={`/products/EUG-${itemName.replace(/\s+/g, "-")}`}>
           <img

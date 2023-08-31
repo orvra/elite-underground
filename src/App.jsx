@@ -1,9 +1,9 @@
-import { useState, useEffect } from "react";
+import { useState, useEffect, useContext } from "react";
 
 import { BrowserRouter, Routes, Route, useNavigate } from "react-router-dom";
 import Home from "./pages/Home";
 import Navbar from "./components/Navbar";
-import { CartContextProvider } from "./context/CartContext";
+import { CartContext } from "./context/CartContext";
 import Men from "./pages/Men";
 import Women from "./pages/Women";
 import Kids from "./pages/Kids";
@@ -14,14 +14,16 @@ import ShoppingCart from "./components/ShoppingCart";
 import MenuOverlay from "./components/MenuOverlay";
 import Footer from "./components/Footer";
 import { AnimatePresence } from "framer-motion";
+import Wishlist from "./pages/Wishlist";
+import WishlistPopup from "./components/WishlistPopup";
 
 function App() {
   const [input, setInput] = useState("");
   const [query, setQuery] = useState("");
   const [displayCart, setDisplayCart] = useState(false);
   const [displayMenu, setDisplayMenu] = useState(false);
-
   const navigate = useNavigate();
+  const { displayWishlistPopup } = useContext(CartContext);
 
   useEffect(() => {
     const storedQuery = localStorage.getItem("searchQuery");
@@ -61,45 +63,44 @@ function App() {
 
   return (
     <>
-      <CartContextProvider>
-        <AnimatePresence>
-          {displayCart && <ShoppingCart handleCartExit={handleCartExit} />}
-        </AnimatePresence>
+      <AnimatePresence>
+        {displayCart && <ShoppingCart handleCartExit={handleCartExit} />}
+      </AnimatePresence>
 
-        <AnimatePresence>
-          {displayMenu && (
-            <MenuOverlay
-              handleMenuClose={handleMenuClose}
-              displayMenu={displayMenu}
-              handleInputChange={handleInputChange}
-              handleSubmit={handleSubmit}
-              value={input}
-            />
-          )}
-        </AnimatePresence>
+      <AnimatePresence>
+        {displayMenu && (
+          <MenuOverlay
+            handleMenuClose={handleMenuClose}
+            displayMenu={displayMenu}
+            handleInputChange={handleInputChange}
+            handleSubmit={handleSubmit}
+            value={input}
+          />
+        )}
+      </AnimatePresence>
+      {displayWishlistPopup && <WishlistPopup />}
+      <Navbar
+        handleInputChange={handleInputChange}
+        handleSubmit={handleSubmit}
+        value={input}
+        handleCartClick={handleCartClick}
+        handleCartExit={handleCartExit}
+        handleMenuClick={handleMenuClick}
+      />
 
-        <Navbar
-          handleInputChange={handleInputChange}
-          handleSubmit={handleSubmit}
-          value={input}
-          handleCartClick={handleCartClick}
-          handleCartExit={handleCartExit}
-          handleMenuClick={handleMenuClick}
-        />
+      <Routes>
+        <Route index element={<Home />} />
+        <Route path="/home" element={<Home />} />
+        <Route path="/men" element={<Men />} />
+        <Route path="/women" element={<Women />} />
+        <Route path="/kids" element={<Kids />} />
+        <Route path="/accessories" element={<Accessories />} />
+        <Route path="/search" element={<SearchResults query={query} />} />
+        <Route path="/products/:productId" element={<ProductPage />} />
+        <Route path="/wishlist" element={<Wishlist />} />
+      </Routes>
 
-        <Routes>
-          <Route index element={<Home />} />
-          <Route path="/home" element={<Home />} />
-          <Route path="/men" element={<Men />} />
-          <Route path="/women" element={<Women />} />
-          <Route path="/kids" element={<Kids />} />
-          <Route path="/accessories" element={<Accessories />} />
-          <Route path="/search" element={<SearchResults query={query} />} />
-          <Route path="/products/:productId" element={<ProductPage />} />
-        </Routes>
-
-        <Footer />
-      </CartContextProvider>
+      <Footer />
     </>
   );
 }

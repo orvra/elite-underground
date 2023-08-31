@@ -13,6 +13,7 @@ const getDefaultCart = () => {
 
 export const CartContextProvider = (props) => {
   const [cartItems, setCartItems] = useState(getDefaultCart());
+  const [displayWishlistPopup, setDisplayWishlistPopup] = useState(false);
 
   const addItems = (itemId, size) => {
     setCartItems((prev) => ({
@@ -71,6 +72,16 @@ export const CartContextProvider = (props) => {
     return total;
   };
 
+  const openWishlistPopup = () => {
+    setDisplayWishlistPopup(true);
+    document.body.style.overflow = "hidden";
+  };
+
+  const closeWishlistPopup = () => {
+    setDisplayWishlistPopup(false);
+    document.body.style.overflow = "auto";
+  };
+
   const cardContextValue = {
     cartItems,
     addItems,
@@ -78,6 +89,9 @@ export const CartContextProvider = (props) => {
     subTotal,
     totalCartItems,
     deleteItem,
+    openWishlistPopup,
+    closeWishlistPopup,
+    displayWishlistPopup,
   };
 
   console.log(cartItems);

@@ -15,7 +15,7 @@ function Home() {
           </h1>{" "}
           <IconAnimation interval={250} />
         </div>
-        <p className="text-sm sm:text-2xl pt-4 text-transparent bg-clip-text bg-gradient-to-r from-slate-500 to-black">
+        <p className="text-sm sm:text-2xl pt-4 -text-transparent -bg-clip-text -bg-gradient-to-r from-slate-500 to-black">
           Unleash the champion within, no matter where you begin. Embrace a
           future where greatness knows no limits.
         </p>

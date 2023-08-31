@@ -39,7 +39,9 @@ function Navbar({
             </ul>
 
             <div className="flex space-x-4 items-center">
-              <FaRegHeart className="text-lg cursor-pointer" />
+              <Link to="/wishlist">
+                <FaRegHeart className="text-lg cursor-pointer" />
+              </Link>
               <div className="relative">
                 <RiShoppingBagLine
                   className="text-xl cursor-pointer"
