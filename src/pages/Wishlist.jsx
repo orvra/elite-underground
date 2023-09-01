@@ -24,7 +24,6 @@ function Wishlist() {
           >
             LOG IN
           </button>
-          <MainButton />
         </div>
       </div>
     </div>

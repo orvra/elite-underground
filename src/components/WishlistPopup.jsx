@@ -9,7 +9,7 @@ function WishlistPopup() {
   return (
     <>
       <div className="fixed w-full h-[400px] px-4 z-[80] top-1/4">
-        <div className="relative flex flex-col h-full max-w-[400px] space-y-10 text-center items-center justify-center mx-auto bg-white rounded-xl">
+        <div className="relative flex flex-col h-full max-w-[400px]  space-y-6 text-center items-center justify-center mx-auto bg-white rounded-xl">
           <div
             onClick={() => closeWishlistPopup()}
             className="absolute top-3 right-3 bg-gray-200 rounded-full p-1.5 hover:text-white"
@@ -34,7 +34,6 @@ function WishlistPopup() {
             >
               LOG IN
             </button>
-            <MainButton />
           </div>
         </div>
       </div>

@@ -26,9 +26,9 @@ function ShoppingCart({ handleCartExit }) {
   console.log(total);
 
   return (
-    <div className="">
+    <div className="relative">
       <motion.div
-        className="fixed max-w-[768px] w-full min-h-screen top-5 bottom-0 right-0 overflow-y-scroll bg-white z-[60] rounded-md p-4"
+        className="fixed max-w-[768px] w-screen min-h-screen top-5 bottom-0 right-0 overflow-y-scroll bg-white z-[60] rounded-md py-4 p-4 pr-1.5"
         initial={{ y: "100%" }} // Slide in if displayMenu is true, otherwise slide out
         animate={{ y: 0 }} // Slide in if displayMenu is true, otherwise slide out
         transition={{ duration: 0.5 }}
@@ -37,11 +37,11 @@ function ShoppingCart({ handleCartExit }) {
         <div className="flex items-center justify-center p-2 mb-4">
           <h3 className="text-sm font-medium">YOUR BAG</h3>
           <AiOutlineClose
-            className="absolute right-4 text-xl cursor-pointer"
+            className="absolute right-2 text-xl cursor-pointer"
             onClick={handleCartExit}
           />
         </div>
-        <div className="relative h-40 bg-slate-200 p-2">
+        <div className="relative h-40 bg-gray-100 p-2">
           <h3 className="text-center font-bold">SUMMARY</h3>
           <div className="border-b border-slate-100 py-3"></div>
           <div className="flex justify-between pr-2 pt-4">
@@ -112,6 +112,14 @@ function ShoppingCart({ handleCartExit }) {
             })
           )}
         </div>
+
+        <button
+          className={
+            "w-full sticky bottom-3 mt-8 bg-gray-200 pl-4 right-1 rounded-full font-bold transition ease-in-out delay-100 hover:bg-black hover:text-white duration-300"
+          }
+        >
+          CHECKOUT
+        </button>
       </motion.div>
 
       <div className="fixed inset-0 h-screen w-full z-[55] bg-black opacity-70"></div>

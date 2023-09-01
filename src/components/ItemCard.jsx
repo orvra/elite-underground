@@ -24,8 +24,11 @@ function ItemCard({
         onMouseEnter={() => setIsShown(true)}
         onMouseLeave={() => setIsShown(false)}
       >
-        <button className="absolute top-4 right-4 text-lg bg-white p-2 rounded-full">
-          <FaRegHeart className="text-lg" onClick={() => openWishlistPopup()} />
+        <button
+          onClick={() => openWishlistPopup()}
+          className="absolute top-4 right-4 text-lg bg-white p-2 rounded-full"
+        >
+          <FaRegHeart className="text-lg" />
         </button>
         <Link to={`/products/EUG-${itemName.replace(/\s+/g, "-")}`}>
           <img
