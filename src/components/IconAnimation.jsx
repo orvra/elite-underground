@@ -23,7 +23,7 @@ const IconAnimation = ({ interval }) => {
     <MdSportsTennis />,
     <MdSportsGolf />,
     <img
-      src="/src/images/eug_v8.png"
+      src="../src/images/eug_v8.png"
       className="w-[83.3px] pt-1 md:w-[108px] md:pt-[5.7px] lg:w-[188px] lg:pt-[10px]"
     />,
   ];
