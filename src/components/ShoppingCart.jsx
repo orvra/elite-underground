@@ -1,6 +1,6 @@
 import React from "react";
 import { CartContext } from "../context/CartContext";
-import { useContext, useState } from "react";
+import { useContext } from "react";
 import {
   AiOutlineClose,
   AiFillPlusCircle,

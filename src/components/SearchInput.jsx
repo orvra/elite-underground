@@ -2,8 +2,6 @@ import { GoSearch } from "react-icons/go";
 import { useState } from "react";
 
 function SearchInput({ handleInput, handleSubmit, value, style = "" }) {
-  const [searchValue, setSearchValue] = useState("");
-
   const handleFormSubmit = (e) => {
     e.preventDefault();
     handleSubmit(e); // Call the handleSubmit function from props

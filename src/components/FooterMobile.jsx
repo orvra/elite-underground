@@ -1,13 +1,6 @@
 import React from "react";
 import { Accordion, AccordionSummary, AccordionDetails } from "@mui/material";
 import ExpandMoreIcon from "@mui/icons-material/ExpandMore";
-import {
-  FaFacebookF,
-  FaPinterestP,
-  FaInstagram,
-  FaYoutube,
-  FaTiktok,
-} from "react-icons/fa";
 
 function FooterMobile() {
   return (

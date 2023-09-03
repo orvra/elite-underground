@@ -1,11 +1,4 @@
 import React from "react";
-import {
-  FaFacebookF,
-  FaPinterestP,
-  FaInstagram,
-  FaYoutube,
-  FaTiktok,
-} from "react-icons/fa";
 
 function FooterLgScreen() {
   return (

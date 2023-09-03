@@ -1,6 +1,5 @@
 import React, { useState, useEffect } from "react";
 import { AiOutlineClose } from "react-icons/ai";
-import { FaRegArrowAltCircleRight } from "react-icons/fa";
 import { BsChevronCompactRight } from "react-icons/bs";
 import SearchInput from "./SearchInput";
 import { Link } from "react-router-dom";

@@ -1,6 +1,5 @@
 import React, { useContext } from "react";
 import { BsEmojiHeartEyes } from "react-icons/bs";
-import MainButton from "../components/MainButton";
 import { AiOutlineClose } from "react-icons/ai";
 import { CartContext } from "../context/CartContext";
 
