@@ -8,7 +8,7 @@ gender: 'Women',
 category: 'sports bras tops',
 color: 'Black',
 price: 40,
-src: '/src/images/clothing/black_sports_bra.jpg',
+src: 'elite-underground/src/images/clothing/black_sports_bra.jpg',
 rating: 4.5,
 fit: 30
 },
