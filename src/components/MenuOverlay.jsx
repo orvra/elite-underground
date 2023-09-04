@@ -14,7 +14,7 @@ function MenuOverlay({
 }) {
   const [selectedItem, setSelectedItem] = useState("WOMEN");
   const [selectedImage, setSelectedImage] = useState(
-    "elite-underground/images/clothing/woman_yoga.jpg"
+    "/elite-underground/images/clothing/woman_yoga.jpg"
   );
   const [link, setLink] = useState("/women");
 
@@ -43,23 +43,23 @@ function MenuOverlay({
     setSelectedItem(item);
     switch (item) {
       case "WOMEN":
-        setSelectedImage("elite-underground/images/clothing/woman_yoga.jpg");
+        setSelectedImage("/elite-underground/images/clothing/woman_yoga.jpg");
         setLink("/women");
         break;
       case "MEN":
-        setSelectedImage("elite-underground/images/clothing/man_kicking.jpg");
+        setSelectedImage("/elite-underground/images/clothing/man_kicking.jpg");
         setLink("/men");
         break;
       case "KIDS":
-        setSelectedImage("elite-underground/images/clothing/kid_skiing.jpg");
+        setSelectedImage("/elite-underground/images/clothing/kid_skiing.jpg");
         setLink("/kids");
         break;
       case "ACCESSORIES":
-        setSelectedImage("elite-underground/images/clothing/accessories.jpg");
+        setSelectedImage("/elite-underground/images/clothing/accessories.jpg");
         setLink("/accessories");
         break;
       default:
-        setSelectedImage("elite-underground/images/clothing/woman_yoga.jpg");
+        setSelectedImage("/elite-underground/images/clothing/woman_yoga.jpg");
         setLink("/women");
     }
   };

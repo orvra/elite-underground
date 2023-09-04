@@ -14,7 +14,7 @@ function Women() {
       {/*Hero Section */}
       <div className="relative h-[800px]">
         <img
-          src="elite-underground/images/athletes/woman_jumping5.jpg"
+          src="/elite-underground/images/athletes/woman_jumping5.jpg"
           className="w-full h-full object-cover"
         />
         <div className="absolute top-1/4 left-8 xl:left-32 w-1/2 pt-12">
