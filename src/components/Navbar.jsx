@@ -21,7 +21,7 @@ function Navbar({
         <div className="fixed top-0 left-0 right-0 z-50 bg-white shadow-sm ">
           <nav className="max-w-[1450px] mx-auto   flex justify-between items-center py-4 px-4">
             <Link to="/">
-              <img src="/src/images/EUG_v8.png" className="w-20" />
+              <img src="elite-underground/EUG_v8.png" className="w-20" />
             </Link>
             <ul className="space-x-7 pl-48 hidden lg:block">
               <li className="inline-block">

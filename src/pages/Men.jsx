@@ -13,7 +13,7 @@ function Men() {
       <div className="relative h-[800px]">
         {/*Hero Section */}
         <img
-          src="./src/images/athletes/armyrunning2.jpg"
+          src="elite-underground/images/athletes/armyrunning2.jpg"
           className="w-full h-full object-cover"
         />
         <div className="absolute z-20 left-1/3 min-[360px]:left-36 top-12 min-[420px]:left-1/2 md:top-1/3 md:pl-14">

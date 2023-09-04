@@ -101,7 +101,7 @@ function Home() {
       <div className="relative h-[700px] w-full overflow-hidden lg:mt-6">
         <img
           className="absolute z-[5] h-full w-full object-cover xl:h-[110%]"
-          src="./src/images/athletes/womens_hero.jpg"
+          src="elite-underground/images/athletes/womens_hero.jpg"
         />{" "}
         <div className="absolute z-[7] bottom-4 w-full px-5 md:px-0 md:w-1/2 md:bottom-[40%] md:left-[4%] lg:left-[6%] xl:left-[10%] xl:bottom-[35%]">
           <div className="pb-4">
@@ -177,7 +177,7 @@ function Home() {
         <div className="absolute z-[6] w-full h-full bg-gradient-to-b from-transparent from-60% to-black opacity-100 lg:from-40%"></div>
         <img
           className="w-full h-full object-cover"
-          src="./src/images/athletes/kids_fight3.jpg"
+          src="elite-underground/images/athletes/kids_fight3.jpg"
         ></img>
         <div className="absolute z-[7] flex flex-col justify-center bottom-4 w-full px-4 md:bottom-[30%]">
           <div className="text-center pb-4">
@@ -206,7 +206,7 @@ function Home() {
           <div className="relative group max-w-[500px] h-full overflow-hidden lg:w-full">
             <img
               className="absolute z-[5] h-12 top-3 left-3 "
-              src="/src/images/athletes/ca.svg"
+              src="elite-underground/images/athletes/ca.svg"
             />
             <div className="absolute h-full w-full z-[4] ">
               <div className="w-full h-full bg-gradient-to-bl from-transparent from-50% to-black opacity-100 rounded-lg"></div>
@@ -221,7 +221,7 @@ function Home() {
               </p>
             </div>
             <img
-              src="/src/images/clothing/man_running.jpg"
+              src="elite-underground/images/clothing/man_running.jpg"
               className="w-full h-full z-[3] rounded-lg object-cover group-hover:scale-105"
             />
           </div>
@@ -243,7 +243,7 @@ function Home() {
             </div>
 
             <img
-              src="/src/images/clothing/girl_boxing.jpg"
+              src="elite-underground/images/clothing/girl_boxing.jpg"
               className="w-full h-full z-[3] rounded-lg object-cover group-hover:scale-105"
             />
           </div>
@@ -266,7 +266,7 @@ function Home() {
               </p>
             </div>
             <img
-              src="/src/images/clothing/girl_bball.jpg"
+              src="elite-underground/images/clothing/girl_bball.jpg"
               className="w-full h-full z-[3] rounded-lg object-cover group-hover:scale-105"
             />
           </div>

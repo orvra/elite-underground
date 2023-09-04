@@ -12,7 +12,7 @@ function Kids() {
       {/*Hero Section */}
       <div className="relative h-[800px] w-full">
         <img
-          src="./src/images/athletes/kids_soccer2.jpg"
+          src="elite-underground/images/athletes/kids_soccer2.jpg"
           className="w-full h-full object-cover"
         />
         <div className="absolute top-32 w-1/2 left-8 sm:top-48 xl:left-32 ">

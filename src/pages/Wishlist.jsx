@@ -1,6 +1,5 @@
 import React from "react";
 import { BsEmojiHeartEyes } from "react-icons/bs";
-import MainButton from "../components/MainButton";
 
 function Wishlist() {
   return (
