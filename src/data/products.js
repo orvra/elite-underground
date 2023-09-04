@@ -19,7 +19,7 @@ gender: 'Women',
 category: 'tanks tops',
 color: 'Sky Blue',
 price: 40,
-src: 'elite-underground/images/clothing/basic_womens_tank_blue_bg.jpg',
+src: '/elite-underground/images/clothing/basic_womens_tank_blue_bg.jpg',
 rating: 4.2,
 fit: 20
 },
