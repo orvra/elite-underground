@@ -26,7 +26,7 @@ function Home() {
         <div className="absolute z-[6] w-full h-full bg-gradient-to-b from-transparent from-40% to-black opacity-100 md:bg-gradient-to-br xl:bg-gradient-to-r"></div>
         <img
           className="absolute z-[5] h-full w-full object-cover xl:h-[110%] 2xl:h-[135%] min-[2000px]:h-[165%]"
-          src="../images/athletes/guy_sitting.jpg"
+          src="elite-underground/images/athletes/guy_sitting.jpg"
         />{" "}
         <div className="absolute z-[7] bottom-4 w-full px-5 md:px-0 md:w-1/2 md:bottom-[40%] md:left-[60%] lg:left-[65%] xl:left-[63%] xl:bottom-[35%]">
           <div className="pb-4">
