@@ -90,8 +90,8 @@ function App() {
 
       <Routes>
         <Route index element={<Home />} />
-        <Route path="/home" element={<Home />} />
-        <Route path="/men" element={<Men />} />
+        <Route path="elite_underground/home" element={<Home />} />
+        <Route path="elite_underground/men" element={<Men />} />
         <Route path="/women" element={<Women />} />
         <Route path="/kids" element={<Kids />} />
         <Route path="/accessories" element={<Accessories />} />
