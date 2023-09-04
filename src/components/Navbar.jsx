@@ -22,7 +22,7 @@ function Navbar({
           <nav className="max-w-[1450px] mx-auto   flex justify-between items-center py-4 px-4">
             <Link to="/">
               <img
-                src="/elite-underground/images/logo/eug_v8.png"
+                src="/elite-underground/images/logo/EUG_v8.png"
                 alt="why"
                 className="w-20"
               />
