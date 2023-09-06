@@ -27,13 +27,13 @@ function Home() {
         <img
           className="absolute z-[5] h-full w-full object-cover xl:h-[110%] 2xl:h-[135%] min-[2000px]:h-[165%]"
           src="/elite-underground/images/athletes/guy_sitting.jpg"
-        />{" "}
+        />
         <div className="absolute z-[7] bottom-4 w-full px-5 md:px-0 md:w-1/2 md:bottom-[40%] md:left-[60%] lg:left-[65%] xl:left-[63%] xl:bottom-[35%]">
           <div className="pb-4">
-            <h1 className="text-white font-bold tracking-tighter text-2xl md:text-3xl xl:text-4xl">
+            <h1 className="text-white font-bold tracking-tighter text-xl md:text-3xl xl:text-4xl">
               ELITE UNDERGROUND
             </h1>
-            <h1 className="text-white font-bold tracking-tighter pb-2 md:text-5xl xl:text-7xl">
+            <h1 className="text-white font-bold tracking-tighter pb-2 text-4xl md:text-5xl xl:text-7xl">
               GYM APPAREL
             </h1>
             <p className="text-white text-md md:text-sm xl:text-lg">

@@ -23,7 +23,7 @@ function Navbar({
             <Link to="/">
               <img
                 src="/elite-underground/images/logo/EUG_v8.png"
-                alt="why"
+                alt="logo"
                 className="w-20"
               />
             </Link>

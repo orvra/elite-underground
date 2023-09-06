@@ -7,7 +7,7 @@ import { CartContextProvider } from "./context/CartContext";
 
 ReactDOM.render(
   <React.StrictMode>
-    <BrowserRouter>
+    <BrowserRouter basename="/elite-underground">
       <CartContextProvider>
         <App />
       </CartContextProvider>
