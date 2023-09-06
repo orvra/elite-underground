@@ -12,7 +12,7 @@ function Home() {
         <div className="flex items-center space-x-3.5 md:space-x-4 lg:space-x-6">
           <h1 className="text-4xl font-bold tracking-tighter lg:text-[85px] md:text-5xl ">
             WE ARE
-          </h1>{" "}
+          </h1>
           <IconAnimation interval={250} />
         </div>
         <p className="text-md md:text-lg lg:text-2xl pt-4 -text-transparent -bg-clip-text -bg-gradient-to-r from-slate-500 to-black">
