@@ -46,11 +46,11 @@ function Navbar({
               <Link to="/wishlist">
                 <FaRegHeart className="text-lg cursor-pointer" />
               </Link>
-              <div className="relative">
-                <RiShoppingBagLine
-                  className="text-xl cursor-pointer"
-                  onClick={handleCartClick}
-                />
+              <div
+                className="relative cursor-pointer"
+                onClick={handleCartClick}
+              >
+                <RiShoppingBagLine className="text-xl" />
                 <p
                   className={
                     totalCartItems() === 0
